@@ -50,7 +50,11 @@ export default function Portfolio() {
         { id: 6, title: 'Dotwork Wolf', style: 'Blackwork • 2025', category: 'blackwork', image: '/images/portfolio/tat6.jpg' },
         { id: 7, title: 'Watercolor Phoenix', style: 'Color • 2025', category: 'color', image: '/images/portfolio/tat7.jpg' },
         { id: 8, title: 'American Traditional', style: 'Traditional • 2024', category: 'traditional', image: '/images/portfolio/tat8.jpg' },
-        { id: 9, title: 'New School Piece', style: 'Color • 2025', category: 'color', image: '/images/portfolio/tat9.jpg' }
+        { id: 9, title: 'New School Piece', style: 'Color • 2025', category: 'color', image: '/images/portfolio/tat9.jpg' },
+        { id: 10, title: 'Realism Portrait', style: 'Dark Art • 2025', category: 'dark-art', image: '/images/portfolio/tat10.jpg' },
+        { id: 11, title: 'Minimalist Design', style: 'Blackwork • 2025', category: 'blackwork', image: '/images/portfolio/tat11.jpg' },
+        { id: 12, title: 'Traditional Flash', style: 'Traditional • 2024', category: 'traditional', image: '/images/portfolio/tat12.jpg' },
+        { id: 13, title: 'Illustrative Art', style: 'Color • 2025', category: 'color', image: '/images/portfolio/tat13.jpg' }
     ]
 
     const filters = ['all']
