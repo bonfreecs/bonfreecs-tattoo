@@ -87,7 +87,6 @@ export default function MainLayout({ children }) {
                             <li><Link href="/" className="neon-link">Home</Link></li>
                             <li><Link href="/about" className="neon-link">About</Link></li>
                             <li><Link href="/portfolio" className="neon-link">Portfolio</Link></li>
-                            <li><Link href="/contact" className="neon-link">Contact</Link></li>
                         </ul>
                     </div>
                     <div className="footer-social">
