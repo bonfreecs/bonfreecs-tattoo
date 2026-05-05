@@ -8,7 +8,6 @@ const aboutLetters = [
     { char: 'O', direction: 'bottom' },
     { char: 'U', direction: 'right' },
     { char: 'T', direction: 'top' },
-    { char: ' ', direction: 'none' },
     { char: 'U', direction: 'left' },
     { char: 'S', direction: 'bottom' }
 ]
@@ -22,17 +21,17 @@ const AnimatedAbout = () => {
     }, [])
     
     return (
-        <h1 className="page-title glitch" data-text="ABOUT US">
-            {aboutLetters.map((letter, index) => (
-                <span
-                    key={index}
-                    className={`letter-animate ${letter.direction} ${visible ? 'visible' : ''}`}
-                    style={{ transitionDelay: `${index * 0.1}s` }}
-                >
-                    {letter.char === ' ' ? '\u00A0' : letter.char}
-                </span>
-            ))}
-        </h1>
+                <h1 className="page-title glitch" data-text="ABOUTUS">
+                    {aboutLetters.map((letter, index) => (
+                        <span
+                            key={index}
+                            className={`letter-animate ${letter.direction} ${visible ? 'visible' : ''}`}
+                            style={{ transitionDelay: `${index * 0.1}s` }}
+                        >
+                            {letter.char}
+                        </span>
+                    ))}
+                </h1>
     )
 }
 
