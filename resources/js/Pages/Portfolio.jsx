@@ -93,7 +93,7 @@ export default function Portfolio() {
                                 <div className="neon-border"></div>
                             </div>
                         </div>
-                    ))}
+                ))}
             </section>
         </MainLayout>
     )
