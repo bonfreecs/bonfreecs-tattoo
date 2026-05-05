@@ -2156,6 +2156,43 @@ a, button, [role="button"], input, textarea, select {
 }
 
 @media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 26, 0.98);
+        flex-direction: column;
+        padding: 2rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .text-logo {
+        font-size: 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
     body { cursor: auto; }
     .cursor-neon { display: none; }
     .neon-nav { padding: 1rem 2rem; }
