@@ -8,8 +8,8 @@
     
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2.0">
     
-    <link rel="stylesheet" href="/build/assets/app-B-BEL-Ix.css">
-    <script type="module" src="/build/assets/app-czsZWiAi.js"></script>
+    <link rel="stylesheet" href="/build/assets/app-Dkm8aFBc.css">
+    <script type="module" src="/build/assets/app-BsYFT4d6.js"></script>
 </head>
 <body>
     @inertia
