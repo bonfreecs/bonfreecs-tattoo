@@ -2166,24 +2166,6 @@ a, button, [role="button"], input, textarea, select {
         letter-spacing: 3px;
     }
     
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: rgba(10, 10, 26, 0.98);
-        flex-direction: column;
-        padding: 2rem;
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-    
-    .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    
     .text-logo {
         font-size: 1.5rem;
     }
