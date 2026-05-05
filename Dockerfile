@@ -27,6 +27,9 @@ WORKDIR /var/www/html
 # Copy application files
 COPY . .
 
+# Create .env file from example
+RUN if [ ! -f .env ] && [ -f .env.example ]; then cp .env.example .env; fi
+
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
