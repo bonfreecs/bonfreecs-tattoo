@@ -1465,6 +1465,7 @@ a, button, [role="button"], input, textarea, select {
     font-weight: 900;
     letter-spacing: 10px;
     margin-bottom: 1rem;
+    white-space: nowrap;
 }
 
 .page-subtitle {
@@ -2188,7 +2189,10 @@ a, button, [role="button"], input, textarea, select {
     .features-grid, .team-grid, .studio-grid { grid-template-columns: 1fr; }
     .about-content, .contact-content { grid-template-columns: 1fr; gap: 2rem; }
     .page-hero { padding: 10rem 2rem 3rem; }
-    .page-title { font-size: 2.5rem; }
+    .page-title { 
+        font-size: 2.5rem; 
+        white-space: nowrap; 
+    }
     .portfolio-grid, .ig-grid { grid-template-columns: 1fr; padding: 2rem; }
     .portfolio-filter { padding: 2rem; }
     .footer-content { grid-template-columns: 1fr; gap: 2rem; }
