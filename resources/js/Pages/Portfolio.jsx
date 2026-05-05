@@ -49,7 +49,8 @@ export default function Portfolio() {
         { id: 5, title: 'Skull Mandala', style: 'Dark Art • 2024', category: 'dark-art', image: '/images/portfolio/tat5.jpg' },
         { id: 6, title: 'Dotwork Wolf', style: 'Blackwork • 2025', category: 'blackwork', image: '/images/portfolio/tat6.jpg' },
         { id: 7, title: 'Watercolor Phoenix', style: 'Color • 2025', category: 'color', image: '/images/portfolio/tat7.jpg' },
-        { id: 8, title: 'American Traditional', style: 'Traditional • 2024', category: 'traditional', image: '/images/portfolio/tat8.jpg' }
+        { id: 8, title: 'American Traditional', style: 'Traditional • 2024', category: 'traditional', image: '/images/portfolio/tat8.jpg' },
+        { id: 9, title: 'New School Piece', style: 'Color • 2025', category: 'color', image: '/images/portfolio/tat9.jpg' }
     ]
 
     const filters = ['all']
