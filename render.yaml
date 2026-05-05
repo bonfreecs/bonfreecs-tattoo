@@ -23,3 +23,5 @@ services:
         value: sqlite
       - key: LOG_CHANNEL
         value: stderr
+      - key: ASSET_URL
+        value: https://bonfreecs-tattoo-lywl.onrender.com

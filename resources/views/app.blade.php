@@ -8,8 +8,8 @@
     
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2.0">
     
-    <link rel="stylesheet" href="/build/assets/app-Dkm8aFBc.css">
-    <script type="module" src="/build/assets/app-BsYFT4d6.js"></script>
+    @viteReactRefresh()
+    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
 </head>
 <body>
     @inertia
