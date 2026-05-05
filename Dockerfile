@@ -30,6 +30,9 @@ COPY . .
 # Create .env file from example
 RUN if [ ! -f .env ] && [ -f .env.example ]; then cp .env.example .env; fi
 
+# Create SQLite database file
+RUN mkdir -p /var/www/html/database && touch /var/www/html/database/database.sqlite
+
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
@@ -38,6 +41,7 @@ RUN npm install && npm run build
 
 # Generate Laravel key and cache config
 RUN php artisan key:generate --force \
+    && php artisan migrate --force \
     && php artisan config:cache \
     && php artisan route:cache \
     && php artisan view:cache
