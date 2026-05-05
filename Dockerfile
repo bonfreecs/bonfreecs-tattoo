@@ -42,7 +42,8 @@ RUN npm install && npm run build
 # Generate Laravel key and cache config
 RUN php artisan key:generate --force \
     && php artisan config:cache \
-    && php artisan route:cache
+    && php artisan route:cache \
+    && php artisan view:cache
 
 # Set proper permissions for build assets
 RUN chmod -R 755 /var/www/html/public/build \
