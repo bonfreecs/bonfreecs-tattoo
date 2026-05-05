@@ -10,6 +10,7 @@ services:
       php artisan key:generate --force
       php artisan config:cache
       php artisan route:cache
+      php artisan view:cache
     startCommand: vendor/bin/heroku-php-apache2 public/
     envVars:
       - key: APP_ENV
@@ -20,3 +21,5 @@ services:
         generateValue: true
       - key: DB_CONNECTION
         value: sqlite
+      - key: LOG_CHANNEL
+        value: stderr
