@@ -1,0 +1,43 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Circular background -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGlow)" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Skull design -->
+  <g filter="url(#glow)">
+    <!-- Skull head -->
+    <ellipse cx="32" cy="28" rx="12" ry="14" fill="#1a1a2e" stroke="#00d4ff" stroke-width="2"/>
+    
+    <!-- Eye sockets -->
+    <circle cx="27" cy="26" r="4" fill="#0a0a1a" stroke="#00d4ff" stroke-width="1.5"/>
+    <circle cx="37" cy="26" r="4" fill="#0a0a1a" stroke="#00d4ff" stroke-width="1.5"/>
+    
+    <!-- Pupils -->
+    <circle cx="27" cy="26" r="1.5" fill="#00d4ff"/>
+    <circle cx="37" cy="26" r="1.5" fill="#00d4ff"/>
+    
+    <!-- Nose -->
+    <ellipse cx="32" cy="31" rx="2" ry="3" fill="#0a0a1a" stroke="#00d4ff" stroke-width="1"/>
+    
+    <!-- Mouth/Smile -->
+    <path d="M 26 36 Q 32 40 38 36" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Dagger through skull -->
+    <line x1="15" y1="28" x2="49" y2="28" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+    <polygon points="49,28 52,25 52,31" fill="#8b5cf6" stroke="#8b5cf6" stroke-width="1"/>
+    <line x1="15" y1="26" x2="15" y2="30" stroke="#8b5cf6" stroke-width="2"/>
+  </g>
+</svg>

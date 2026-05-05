@@ -1,0 +1,67 @@
+<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Decorative elements top -->
+  <line x1="30" y1="15" x2="100" y2="15" stroke="#00d4ff" stroke-width="0.5" opacity="0.4"/>
+  <line x1="300" y1="15" x2="370" y2="15" stroke="#00d4ff" stroke-width="0.5" opacity="0.4"/>
+  <polygon points="25,12 30,15 25,18" fill="#00d4ff" opacity="0.6" filter="url(#glow)"/>
+  <polygon points="375,12 370,15 375,18" fill="#00d4ff" opacity="0.6" filter="url(#glow)"/>
+  
+  <!-- Skull icon left -->
+  <g filter="url(#glow)" opacity="0.8">
+    <ellipse cx="80" cy="50" rx="10" ry="12" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1.5"/>
+    <circle cx="76" cy="47" r="3" fill="#0a0a1a" stroke="#00d4ff" stroke-width="1"/>
+    <circle cx="84" cy="47" r="3" fill="#0a0a1a" stroke="#00d4ff" stroke-width="1"/>
+    <circle cx="76" cy="47" r="1" fill="#00d4ff"/>
+    <circle cx="84" cy="47" r="1" fill="#00d4ff"/>
+    <path d="M 74 56 Q 80 59 86 56" fill="none" stroke="#00d4ff" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Main text BONFREECS - Gradient cyan to purple -->
+  <text x="200" y="55" font-family="Orbitron, sans-serif" font-size="42" font-weight="900" 
+        fill="url(#neonGlow)" text-anchor="middle" filter="url(#strongGlow)">BONFREECS</text>
+  
+  <!-- Decorative dot -->
+  <circle cx="200" cy="68" r="2" fill="#8b5cf6" filter="url(#glow)"/>
+  
+  <!-- TATTOO text - Light purple/white -->
+  <text x="200" y="95" font-family="Rajdhani, sans-serif" font-size="28" 
+        fill="#e8e8f0" text-anchor="middle" filter="url(#glow)" letter-spacing="8">TATTOO</text>
+  
+  <!-- Skull icon right -->
+  <g filter="url(#glow)" opacity="0.8">
+    <ellipse cx="320" cy="50" rx="10" ry="12" fill="#1a1a2e" stroke="#8b5cf6" stroke-width="1.5"/>
+    <circle cx="316" cy="47" r="3" fill="#0a0a1a" stroke="#8b5cf6" stroke-width="1"/>
+    <circle cx="324" cy="47" r="3" fill="#0a0a1a" stroke="#8b5cf6" stroke-width="1"/>
+    <circle cx="316" cy="47" r="1" fill="#8b5cf6"/>
+    <circle cx="324" cy="47" r="1" fill="#8b5cf6"/>
+    <path d="M 314 56 Q 320 59 326 56" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Decorative elements bottom -->
+  <line x1="100" y1="105" x2="300" y2="105" stroke="url(#neonGlow)" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Small decorative triangles -->
+  <polygon points="170,48 180,58 160,58" fill="#00d4ff" opacity="0.5" filter="url(#glow)"/>
+  <polygon points="240,48 250,58 230,58" fill="#8b5cf6" opacity="0.5" filter="url(#glow)"/>
+</svg>
